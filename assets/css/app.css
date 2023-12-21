@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2aac8b;
+}
+
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  color: #212b31;
+  margin: 0;
+  overflow: overlay;
+
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/lettuce-that-is-placed-white.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fffefa;
+  scrollbar-width: 0px;
+}
+
+header.navbar-container {
+  max-width: 1130px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 4rem;
+  z-index: 999;
+}
+
+header.navbar-container .logo {
+  display: flex;
+}
+
+header.navbar-container .logo .logo-desc {
+  padding-top: 1rem;
+  display: inline-block;
+  align-self: center;
+  margin-left: -10px;
+  color: #2aac8b;
+}
+
+header.navbar-container .logo .logo-desc h4,
+header.navbar-container .logo .logo-desc h6 {
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-top: 1rem;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+  color: #212b31;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #212b31;
+  color: #2aac8b;
+}
+
+main #content .jumbotron {
+  max-width: 1130px;
+  width: 100%;
+  margin-inline: auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+main #content .jumbotron .jumbotron-description,
+main #content #about-us .history .history-desc,
+main #content #about-us .cust-choose .cust-choose-desc {
+  flex: 1 1;
+}
+
+main #content .jumbotron .jumbotron-description .jumbotron-title {
+  font-size: 3.5rem;
+  margin-block-start: 2rem;
+  margin-block-end: 0px;
+}
+
+main #content .jumbotron .jumbotron-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+main #content .jumbotron .jumbotron-description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: #fffefa;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #2d3e50;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main #content .jumbotron .jumbotron-description button:hover {
+  border: 3px solid #7ddfc7;
+  color: #2d3e50;
+  background-color: #2aac8b;
+}
+
+main #content .jumbotron .jumbotron-image {
+  flex: 1;
+  display: flex;
+}
+
+main #content .jumbotron .jumbotron-image img {
+  margin: auto;
+  min-width: 250px;
+  width: 500px;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #2d3e50;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fffefa;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #89b0d9;
+}
+
+main #content #about-us {
+  max-width: auto;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 8rem;
+}
+
+main #content #about-us .history .container,
+main #content #about-us .cust-choose .container {
+  max-width: 1130px;
+  width: 100%;
+  margin-inline: auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 399px;
+  gap: 4rem;
+  background-color: #fffefa;
+}
+
+#about-us .history {
+  margin-top: -5px;
+}
+
+#about-us .history,
+#about-us .cust-choose {
+  background-color: #fffefa;
+}
+
+main #content #about-us .history .history-img img,
+main #content #about-us .cust-choose .cust-choose-img img {
+  margin: auto;
+  min-width: 250px;
+  width: 565px;
+  height: 100%;
+}
+
+main #content #about-us .history .history-desc h1 {
+  font-size: 3rem;
+  margin-block-start: 2rem;
+  margin-block-end: 0px;
+}
+
+main #content #about-us .cust-choose .cust-choose-desc h1 {
+  font-size: 2.2rem;
+  margin-block-start: 2rem;
+  margin-block-end: 0px;
+}
+
+main #content #about-us .history .history-desc p,
+main #content #about-us .cust-choose .cust-choose-desc p {
+  line-height: 1.5;
+}
+
+.branding {
+  background-image: url("../img/vegetables-pattern.png");
+  background-position: center;
+  background-color: #75b474;
+  width: auto;
+  height: auto;
+  position: relative;
+  padding-bottom: 25rem;
+}
+
+.blur-bg {
+  background: rgba(
+    15,
+    112,
+    31,
+    0.8
+  ); /* Adjust the background color and opacity here */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Make sure it's above the background image */
+  pointer-events: none; /* Prevent the overlay from blocking interactions */
+}
+
+#about-us .branding .container {
+  max-width: 1130px;
+  width: 100%;
+  margin-inline: auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 399px;
+  gap: 4rem;
+}
+
+#about-us .branding .container .card-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+  z-index: 2;
+  padding-top: 15rem;
+}
+
+.entity {
+  width: 350px;
+}
+
+#about-us .entity-image {
+  width: auto;
+  height: 250px;
+}
+
+#about-us .entity-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.entity-content {
+  color: #fffefa;
+}
+
+.entity-title {
+  font-size: 2.2rem;
+  margin-block-start: 2rem;
+  margin-block-end: 0px;
+}
+
+#product {
+  position: relative;
+  z-index: 2;
+  margin-top: -12rem;
+}
+
+.product-container {
+  background-color: #fffefa;
+  width: auto;
+  height: auto;
+  margin-top: -1rem;
+}
+
+.product-container .fresh-divider {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #34c5a1;
+  position: absolute;
+  top: 3.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.fresh-divider h1 {
+  font-size: 7rem;
+}
+
+.product-container .container {
+  max-width: 1130px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.product-container .container h1 {
+  font-size: 2rem;
+}
+
+#product .product-container .container .card-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+}
+
+.product-container .container .card-container .entity .entity-content {
+  color: #212b31;
+  padding-inline: 20px;
+}
+
+.product-container .container .card-container .card {
+  border: 1px solid #212b31;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.slider-wrapper {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides-container {
+  width: 100%;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  list-style: none;
+  margin-right: 4rem;
+  gap: 2rem;
+}
+
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: white;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+  z-index: 3;
+}
+
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+
+#slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.slide {
+  max-width: 300px;
+  height: 450px;
+  flex: 1 0 100%;
+  border-radius: 10px;
+}
+
+.slide .entity {
+  padding: 5px;
+  width: auto;
+}
+
+.slide .entity .entity-image {
+  width: 100%;
+}
+
+.slide .entity .entity-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.slide .entity .entity-content {
+  text-align: center;
+}
+
+.slide:nth-child(1),
+.slide:nth-child(5) {
+  background-color: #49b293;
+}
+
+.slide:nth-child(2),
+.slide:nth-child(6) {
+  background-color: #b03532;
+}
+
+.slide:nth-child(3),
+.slide:nth-child(7) {
+  background-color: #6a478f;
+  margin: 0;
+}
+
+.slide:nth-child(4),
+.slide:nth-child(8) {
+  background-color: #dab821;
+}
+
+#contact {
+  height: 1000px;
+  background-color: #ca9456;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("/assets/img/hydroponics-mini.jpeg") no-repeat;
+  background-size: contain, cover;
+  background-attachment: fixed;
+}
+
+.contact-container {
+  max-width: 1130px;
+  width: 100%;
+  margin-top: 6rem;
+  margin-inline: auto;
+  display: flex;
+  gap: 4rem;
+  color: #fffefa;
+}
+
+.g-maps {
+  background-color: #fffefa;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.box-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.box-social ul {
+  list-style: none;
+  margin: 0;
+  padding-inline: 5px;
+  text-align: center;
+}
+
+.box-social ul li {
+  padding-block: 5px;
+}
+
+.fab {
+  font-size: 2rem;
+  color: #7ddfc7;
+  transition: transform 250ms;
+}
+
+.fab:hover {
+  transform: scale(1.5);
+}
